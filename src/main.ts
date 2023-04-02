@@ -1,5 +1,13 @@
-import { createApp } from 'vue'
-import './style.css'
+// import { createApp } from 'vue'
+import { createApp } from './runtime_canvas'
 import App from './App.vue'
+import { getRootComponent } from './game'
+// import './style.css'
 
-createApp(App).mount('#app')
+
+
+
+createApp(App).mount(getRootComponent())
+
+
+// createApp(App).mount('#app')
